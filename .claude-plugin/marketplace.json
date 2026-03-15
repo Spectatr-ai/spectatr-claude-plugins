@@ -1,0 +1,19 @@
+{
+  "name": "spectatr-marketplace",
+  "owner": {
+    "name": "SpectatrAI",
+    "email": "team@spectatr.ai"
+  },
+  "metadata": {
+    "description": "Internal Claude Code tools for the Spectatr engineering team",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "spectatr-tools",
+      "source": "./",
+      "description": "Spectatr team tools — branch conventions, Linear workflow, PR learning, and session handoff",
+      "version": "1.0.0"
+    }
+  ]
+}
