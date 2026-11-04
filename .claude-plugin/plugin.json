@@ -1,7 +1,7 @@
 {
   "name": "spectatr-tools",
-  "description": "Spectatr team development tools — branch conventions, Linear workflow, PR learning, and session handoff",
-  "version": "1.0.0",
+  "description": "Spectatr team development tools — branch conventions, Linear workflow, PR learning, session handoff, and product alerting",
+  "version": "1.1.0",
   "author": {
     "name": "SpectatrAI"
   }

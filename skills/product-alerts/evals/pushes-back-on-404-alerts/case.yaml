@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: pushes-back-on-404-alerts
+expected_outcome: |
+  Explains that 404s on old links and 401s on expired tokens are expected client errors and
+  should not go to #product-alerts, because every message there means someone investigates.
+  Proposes a log or metric instead, or at most a single warning when the 404 rate crosses a
+  threshold, with a stable title and fingerprint so it dedups. Does not write code that alerts
+  per 404 or per 401.
