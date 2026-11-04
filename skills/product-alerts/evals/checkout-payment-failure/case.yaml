@@ -1,0 +1,11 @@
+schema_version: "1.1"
+name: checkout-payment-failure
+expected_outcome: |
+  Adds a small alert helper that posts to https://alerts.spectatr.ai/v1/alert with a bearer
+  token from the environment, product spectatr-web, env from APP_ENV, fire and forget, silent
+  in local/test. Calls it from the catch around the Stripe call and from the markOrderPaid
+  failure, with a stable title, the order and user ids in context, and severity error or
+  critical. Does not alert on the zod validation failure or on intent.status not succeeded
+  (a declined card is expected). Mentions sending a one-off test from dev.
+context:
+  scaffold_script: place-files.sh

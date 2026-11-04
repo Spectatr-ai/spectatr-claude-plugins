@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: fastapi-unhandled-exceptions
+expected_outcome: |
+  Adds an alert helper (product livemux-control, env from ENV, bearer token from ALERT_TOKEN,
+  background send with a short timeout, silent in local/test) and a FastAPI exception handler
+  for unexpected exceptions that alerts with the exception type, path and traceback and still
+  returns a 500. Alerts when mediamtx is unavailable (a dependency being down) but not on the
+  409 conflict or the 404. Does not alert from every HTTPException.
+context:
+  scaffold_script: place-files.sh
